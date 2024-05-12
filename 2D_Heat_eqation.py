@@ -130,18 +130,12 @@ for time in t:
 
     
 def plotheatmap(T,time):
-  # Clear the current plot figure
-    # time= 66
     plt.clf()
-    # plt.title(f"Temperature at t = {time*delta_t} unit time")
     plt.xlabel("x")
     plt.ylabel("y")
     plt.pcolor(xx, yy, T,cmap = 'RdBu_r',vmin=0,vmax=1)
     plt.colorbar()
-    # dat=pdp.read_table("test.dat",sep=' ',skiprows=1,names=['x','y','time','T'])
-    # xi=dat[dat["time"]==1.0][['x','y']]
-    # plt.plot(xi['x'],xi['y'],'ko')
-    # plt.show()
+   
     return plt
 
 def animate(k):
